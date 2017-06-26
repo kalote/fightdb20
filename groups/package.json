@@ -1,7 +1,7 @@
 {
-  "name": "fightdb-games",
+  "name": "fightdb-group",
   "version": "0.1.0",
-  "description": "Serverless REST API for FightDB games",
+  "description": "Serverless REST API for FightDB groups",
   "main": "handler.js",
   "author": "Johann BICH",
   "license": "MIT",

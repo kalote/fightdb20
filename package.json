@@ -1,0 +1,14 @@
+{
+  "name": "fightdb20",
+  "version": "0.1.0",
+  "description": "Serverless REST API for FightDB",
+  "author": "Johann BICH",
+  "license": "MIT",
+  "scripts": {
+    "start": "sls offline start"
+  },
+  "devDependencies": {
+    "serverless-offline": "^3.14.2",
+    "serverless-secrets-plugin": "0.0.1"
+  }
+}
