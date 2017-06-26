@@ -40,14 +40,6 @@ functions:
           method: get
           cors: true
 
-  games:
-    handler: handler.game
-    events:
-      - http:
-          path: game
-          method: get
-          cors: true
-
 plugins:
   - serverless-offline
   - serverless-secrets-plugin

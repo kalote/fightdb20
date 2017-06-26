@@ -3,10 +3,9 @@ const GameModel = require('../schema/game.js');
 
 module.exports = {
   get: (db, id, callback) => {
-    let opts = id ? {_id: id} : {};
     db.once('open', () => {
       GameModel
-      .find(opts)
+      .find({_id: id})
       .then((g) => {
         callback(null, {
           statusCode: 200,
@@ -36,7 +35,7 @@ module.exports = {
     }
 
     db.once('open', () => {
-      GameModel
+      game
       .save()
       .then(() => {
         callback(null, {

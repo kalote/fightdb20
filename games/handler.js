@@ -9,7 +9,9 @@ const db = mongoose.connect(mongoString).connection;
 
 module.exports = {
   game: (event, context, callback) => {
-    const id = (event.pathParameters.id && validator.isAlphanumeric(id)) ? event.pathParameters.id : '';
+    const id = event.pathParameters.id;
+    if (!validator.isAlphanumeric(id))
+      throw Error('Incorrect id');
 
     Game.get(db, id, callback);
   },

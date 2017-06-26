@@ -1,6 +1,5 @@
 const mongoose = require('mongoose'),
-      Schema = mongoose.Schema,
-      validator = require('validator');
+      Schema = mongoose.Schema;
 
 const GameSchema = new Schema({
   title: {
@@ -16,4 +15,4 @@ const GameSchema = new Schema({
   characters: []
 });
 
-module.exports = mongoose.model('User', UserSchema);
+module.exports = mongoose.model('Game', GameSchema);
