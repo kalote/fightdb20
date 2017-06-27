@@ -28,12 +28,6 @@ module.exports = {
       characters: data.characters
     });
 
-    let errs = game.validateSync()
-    if (errs) {
-      console.log(errs);
-      throw Error('Incorrect game data');
-    }
-
     db.once('open', () => {
       game
       .save()

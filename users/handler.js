@@ -17,8 +17,14 @@ module.exports = {
   },
   createUser: (event, context, callback) => {
     const data = JSON.parse(event.body);
-
-    User.create(db, data, callback);
+    if ((data.email && validator.isEmail(data.email)) &&
+      data.name &&
+      data.gamertag &&
+      (data.gender && ["male","female"].indexOf(data.gender)>-1)){
+      User.create(db, data, callback);
+    } else {
+      throw Error('incorrect data');
+    }
   },
   deleteUser: (event, context, callback) => {
     const id = event.pathParameters.id;

@@ -1,6 +1,5 @@
 const mongoose = require('mongoose'),
       Schema = mongoose.Schema,
-      validator = require('validator'),
       gravatar = require('machinepack-gravatar'),
       password = require('machinepack-passwords');
 
@@ -18,12 +17,7 @@ const UserSchema = new Schema({
   email: {
     type: String,
     required: true,
-    unique: true,
-    validate: {
-      validator(email) {
-        return validator.isEmail(email);
-      }
-    }
+    unique: true
   },
   password: {
     type: String,

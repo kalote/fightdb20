@@ -33,12 +33,6 @@ module.exports = {
       twitch: data.twitch
     });
 
-    let errs = user.validateSync()
-    if (errs) {
-      console.log(errs);
-      throw Error('Incorrect user data');
-    }
-
     db.once('open', () => {
       user
       .save()

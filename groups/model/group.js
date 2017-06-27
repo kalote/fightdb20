@@ -26,12 +26,6 @@ module.exports = {
       name: data.name
     });
 
-    let errs = group.validateSync()
-    if (errs) {
-      console.log(errs);
-      throw Error('Incorrect group data');
-    }
-
     db.once('open', () => {
       group
       .save()
