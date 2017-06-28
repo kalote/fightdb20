@@ -1,0 +1,3 @@
+{
+  "body": "{\"title\":\"Mario Bros\",\"picture\":\"mariobros.jpg\",\"characters\":[{\"name\":\"mario\",\"health\":\"900\",\"stun\":\"900\",\"picture\":\"mario.png\"}]}"
+}

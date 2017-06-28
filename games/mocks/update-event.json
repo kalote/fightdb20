@@ -1,0 +1,6 @@
+{
+  "body": "{\"title\":\"Mario Bros\",\"picture\":\"mariobros.jpg\",\"characters\":[{\"name\":\"mario\",\"health\":\"1000\",\"stun\":\"1000\",\"picture\":\"mario.png\"}]}",
+  "pathParameters": {
+    "id": "d5b787b0-5be6-11e7-b1bd-d90a837bb25e"
+  }
+}
