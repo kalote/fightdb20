@@ -2,7 +2,7 @@ var glob = require('glob');
 var path = require('path');
 var nodeExternals = require('webpack-node-externals');
 
-process.env.NODE_ENV = 'dev';
+process.env.NODE_ENV = 'production';
 
 module.exports = {
   // Use all js files in project root (except the webpack config) as an entry
