@@ -2,3 +2,4 @@ secrets.dev.yml
 node_modules/
 .serverless/
 .DS_Store
+.webpack/

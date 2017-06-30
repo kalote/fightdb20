@@ -42,5 +42,7 @@ fightdb2/
 ## Deploy
 
 ```
-sls deploy -r ap-southeast-1 -s prod
+cd games && sls deploy -r ap-southeast-1 -s prod
+cd users && sls deploy -r ap-southeast-1 -s prod
+cd frontend && npm run deploy
 ```

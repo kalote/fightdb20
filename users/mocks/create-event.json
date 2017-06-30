@@ -1,3 +1,10 @@
 {
-  "body": "{\"username\":\"Kalote\",\"email\":\"kalote@protonmail.com\"}"
+  "body": "{\"username\":\"Kalote\",\"email\":\"kalote@protonmail.com\"}",
+  "requestContext": {
+    "authorizer": {
+      "claims": {
+        "sub": "USER-SUB-1234"
+      }
+    }
+  }
 }
