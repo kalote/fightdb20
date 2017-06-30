@@ -1,4 +1,4 @@
-service: fightdb-games-api
+service: fightdb-users-profile-api
 
 plugins:
   - serverless-webpack
@@ -28,25 +28,14 @@ functions:
     handler: create.main
     events:
       - http:
-          path: games
+          path: users
           method: post
           cors: true
-          authorizer:
-            arn: arn:aws:cognito-idp:ap-northeast-1:820406451902:userpool/ap-northeast-1_KTLhVsKZi
   get:
     handler: get.main
     events:
       - http:
-          path: games/{id}
-          method: get
-          cors: true
-          authorizer:
-            arn: arn:aws:cognito-idp:ap-northeast-1:820406451902:userpool/ap-northeast-1_KTLhVsKZi
-  list:
-    handler: list.main
-    events:
-      - http:
-          path: games
+          path: users/{id}
           method: get
           cors: true
           authorizer:
@@ -55,7 +44,7 @@ functions:
     handler: update.main
     events:
       - http:
-          path: games/{id}
+          path: users/{id}
           method: put
           cors: true
           authorizer:
@@ -64,7 +53,7 @@ functions:
     handler: delete.main
     events:
       - http:
-          path: games/{id}
+          path: users/{id}
           method: delete
           cors: true
           authorizer:
