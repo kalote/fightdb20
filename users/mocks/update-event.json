@@ -1,5 +1,5 @@
 {
-  "body": "{\"email\":\"johannbich@gmail.com\"}",
+  "body": "{\"email\":\"johannbich@gmail.com\", \"dob\":\"1983-30-12\", \"country\":\"Hong-Kong\"}",
   "pathParameters": {
     "id": "USER-SUB-1234"
   }

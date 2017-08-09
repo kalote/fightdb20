@@ -1,5 +1,5 @@
 {
-  "body": "{\"username\":\"Kalote\",\"email\":\"kalote@protonmail.com\"}",
+  "body": "{\"username\":\"Kalote\",\"email\":\"kalote@protonmail.com\", \"dob\":\"1983-30-12\", \"country\":\"France\"}",
   "requestContext": {
     "authorizer": {
       "claims": {
